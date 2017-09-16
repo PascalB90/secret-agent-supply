@@ -1,0 +1,60 @@
+html {
+    font-size: 18px;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.logo-container > .container {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    height: 1.5rem;
+    padding: 0 1rem 0 0.5rem;
+}
+
+.slogan {
+    padding: 0.66rem 0;
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+}
+
+ .message-container {
+     background-image: url("./../img/moto.jpeg");
+     background-size: cover;
+     height: 25rem;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .message {
+     width: 20rem;
+     background-color: #000000;
+     color: #FFFFFF;
+     display: flex;
+     flex-direction: column;
+     padding: 2rem 0 0 3rem;
+     margin-top: 9rem;
+ }
+
+ .message h1 {
+     font-size: 2rem;
+     font-family: Helvetica, sans-serif;
+     font-weight: bold;
+     margin-top: 0;
+ }
+
+.message h3 {
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
