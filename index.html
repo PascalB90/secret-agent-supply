@@ -31,14 +31,19 @@
                 </div>
             </section>
             <nav>
-                <ul>
-                    <li>Eyewaer</li>
-                    <li>Apparel</li>
-                    <li>Gadgets</li>
-                    <li>Vehicles</li>
-                    <li>Classes</li>
-                    <li>Contact</li>
-                </ul>
+                <div class="container">
+                    <div class="mobilen-nav">
+                        <span><button href="" id="menue">Menue</button></span>
+                    </div>
+                    <ul id="main-nav">
+                        <li><a href="#">Eyewaer</a></li>
+                        <li><a href="#">Apparel</a></li>
+                        <li><a href="#">Gadgets</a></li>
+                        <li><a href="#">Vehicle</a></li>
+                        <li><a href="#">Classes</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <!-- END -->
@@ -46,21 +51,27 @@
         <!-- MAIN -->
         <main>
             <!-- products section -->
-            <section class="products-container">
+            <section class="products-container container">
                 <figure class="product">
-                    <img src="./resources/img/pen.png" alt="A black Pen">
+                    <div class="img">
+                        <img src="./resources/img/pen.png" alt="A black Pen">
+                    </div>
                     <figcaption>
                         Exploding Pen
                     </figcaption>
                 </figure>
                 <figure class="product">
-                    <img src="./resources/img/watch.png" alt="Cool silver Watch">
+                    <div class="img">
+                        <img src="./resources/img/watch.png" alt="Cool silver Watch">
+                    </div>
                     <figcaption>
                         Cellular Watch
                     </figcaption>
                 </figure>
                 <figure class="product">
-                    <img src="./resources/img/glasses.png" alt="Black thermal sunglasses">
+                    <div class="img">
+                        <img src="./resources/img/glasses.png" alt="Black thermal sunglasses">
+                    </div>
                     <figcaption>
                         Thermal Glasses
                     </figcaption>
@@ -68,7 +79,7 @@
             </section><!--end product section -->
 
             <!-- contact section -->
-            <section class="contact">
+            <section class="contact container">
                 <div class="contact-element">
                     <h5>Location</h5>
                     <p>-47.346436, 84.32354</p>
@@ -86,5 +97,15 @@
             <p class="copyright">Copyright Secret Agent Supply Inc.</p>
         </footer>
         <!-- END -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $( document ).ready(function() {
+                $('#menue').click(function() {
+                    $('#main-nav').toggleClass("expand");
+                });
+            });
+        </script>
+
     </body>
 </html>
